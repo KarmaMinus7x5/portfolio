@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Калькулятор сметы на ремонт · Ровно</title>
+<meta name="description" content="Считает смету по прайсу позиция за позицией: работы, черновые материалы, срок и график оплаты.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f3f0e9">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Калькулятор сметы на ремонт · Ровно">
+<meta property="og:description" content="Считает смету по прайсу позиция за позицией: работы, черновые материалы, срок и график оплаты.">
+<link rel="icon" href="/portfolio/rovno/favicon.svg" type="image/svg+xml">
+
+  <script type="module" crossorigin src="/portfolio/rovno/assets/calculator-DEPNW1Qp.js"></script>
+  <link rel="modulepreload" crossorigin href="/portfolio/rovno/assets/main-CDSC5m6J.js">
+  <link rel="modulepreload" crossorigin href="/portfolio/rovno/assets/estimate-5vSfTSd0.js">
+  <link rel="modulepreload" crossorigin href="/portfolio/rovno/assets/format-DVBgFexV.js">
+  <link rel="stylesheet" crossorigin href="/portfolio/rovno/assets/main-BO5WiHxz.css">
+</head>
+<body class="page-calculator">
+<p class="ribbon">Концепт-проект для портфолио: компания вымышлена, заявки никуда не уходят.</p>
+
+<a class="skip" href="#main">К содержимому</a>
+<header class="site-header" data-header>
+  <div class="container site-header__row">
+    <a class="brand" href="/portfolio/rovno/" aria-label="Ровно, на главную">
+      <span class="vial" data-level aria-hidden="true"><span class="vial__bubble" data-level-bubble></span></span>
+      <span class="brand__name">Ровно</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>Меню</button>
+    <nav class="site-nav" id="site-nav" aria-label="Разделы" data-menu>
+      <a data-nav="prices" href="/portfolio/rovno/prices/">Цены</a>
+      <a data-nav="calculator" aria-current="page" href="/portfolio/rovno/calculator/">Калькулятор</a>
+      <a data-nav="projects" href="/portfolio/rovno/projects/">Объекты</a>
+      <a data-nav="process" href="/portfolio/rovno/process/">Как работаем</a>
+      <span class="site-nav__phone mono">+7 (000) 000-00-00</span>
+      <a class="button button--small" data-nav="request" href="/portfolio/rovno/request/">Вызвать замерщика</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="container calc-head">
+  <h1>Калькулятор сметы</h1>
+  <p class="lead">Считает по нашему прайсу, позиция за позицией. После замера итог обычно отличается не больше чем на 10%.</p>
+</div>
+<div class="container calc" data-calc>
+  <form class="calc-form" data-calc-form>
+    <fieldset>
+      <legend>Квартира</legend>
+      <div class="segmented" role="radiogroup" aria-label="Тип дома">
+        <label><input type="radio" name="home" value="new" checked> Новостройка без отделки</label>
+        <label><input type="radio" name="home" value="secondary"> Вторичка, с демонтажем</label>
+      </div>
+      <label class="field" for="calc-area">Площадь, м²
+        <span class="range-pair"><input id="calc-area-range" type="range" min="15" max="250" value="54" data-area-range aria-label="Площадь, ползунок"><input id="calc-area" name="area" type="number" min="15" max="250" value="54" inputmode="numeric"></span>
+      </label>
+      <div class="segmented" role="radiogroup" aria-label="Высота потолков">
+        <label><input type="radio" name="height" value="2.5"> 2,5 м</label>
+        <label><input type="radio" name="height" value="2.7" checked> 2,7 м</label>
+        <label><input type="radio" name="height" value="3"> 3 м и выше</label>
+      </div>
+      <div class="field-row">
+        <label class="field">Комнат <select name="rooms"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option></select></label>
+        <label class="field">Санузлов <select name="baths"><option selected>1</option><option>2</option><option>3</option></select></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Отделка</legend>
+      <div class="choice-list" role="radiogroup" aria-label="Уровень отделки">
+        <label><input type="radio" name="level" value="basic"> <b>Базовая</b> <span>Обои, ламинат, простые двери</span></label>
+        <label><input type="radio" name="level" value="comfort" checked> <b>Комфорт</b> <span>Покраска стен, ламинат, скрытая инсталляция</span></label>
+        <label><input type="radio" name="level" value="design"> <b>По дизайн-проекту</b> <span>Инженерная доска, керамогранит 120×60, скрытые двери, теневой профиль</span></label>
+      </div>
+      <div class="segmented" role="radiogroup" aria-label="Потолок">
+        <label><input type="radio" name="ceiling" value="stretch" checked> Натяжной</label>
+        <label><input type="radio" name="ceiling" value="gkl"> Гипсокартон</label>
+        <label><input type="radio" name="ceiling" value="paint"> Покраска</label>
+      </div>
+      <div class="checks">
+        <label><input type="checkbox" name="options" value="electric"> Полностью заменить проводку (для вторички)</label>
+        <label><input type="checkbox" name="options" value="heating"> Тёплый пол в санузле и на кухне</label>
+        <label><input type="checkbox" name="options" value="soundproof"> Шумоизоляция стен к соседям</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Материалы</legend>
+      <div class="choice-list" role="radiogroup" aria-label="Материалы">
+        <label><input type="radio" name="materials" value="client" checked> <b>Чистовые покупаете вы</b> <span>Черновые закупаем мы по чекам</span></label>
+        <label><input type="radio" name="materials" value="turnkey"> <b>Всё покупаем мы</b> <span>Подбираем по вашему списку, все чеки ваши</span></label>
+      </div>
+    </fieldset>
+  </form>
+  <article class="sheet calc-sheet" id="calc-sheet" data-calc-sheet aria-live="polite">
+    <noscript><p>Калькулятору нужен JavaScript. Все цены есть в <a href="/portfolio/rovno/prices/">прайсе</a>.</p></noscript>
+  </article>
+</div>
+<div class="calc-bar" data-calc-bar data-no-print hidden>
+  <span class="meta">Итого</span> <b class="mono" data-calc-bar-total></b>
+  <a class="link-arrow" href="#calc-sheet">Смета</a>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div>
+      <p class="brand__name">Ровно</p>
+      <p class="site-footer__tagline">Ремонт квартир с ценой работ в договоре.</p>
+    </div>
+    <nav class="site-footer__nav" aria-label="Разделы в подвале">
+      <a href="/portfolio/rovno/prices/">Цены</a>
+      <a href="/portfolio/rovno/calculator/">Калькулятор</a>
+      <a href="/portfolio/rovno/projects/">Объекты</a>
+      <a href="/portfolio/rovno/process/">Как работаем</a>
+      <a href="/portfolio/rovno/request/">Замер</a>
+    </nav>
+    <dl class="site-footer__contacts">
+      <div><dt>Телефон</dt><dd class="mono">+7 (000) 000-00-00</dd></div>
+      <div><dt>Почта</dt><dd class="mono">hello@rovno.example</dd></div>
+      <div><dt>Работаем</dt><dd>пн–сб, 9:00–19:00</dd></div>
+    </dl>
+  </div>
+  <div class="container site-footer__legal">
+    <p>Концепт-проект. Компания, объекты и отзывы вымышлены, совпадения случайны. <a href="/portfolio/rovno/credits/">Фотографии</a> с Unsplash.</p>
+    <p class="mono">2026</p>
+  </div>
+</footer>
+
+</body>
+</html>

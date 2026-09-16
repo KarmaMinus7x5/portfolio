@@ -1,0 +1,1 @@
+function e(e){let t=e.querySelector(`[data-compare-range]`);if(!t)return;let n=()=>e.style.setProperty(`--pos`,`${t.value}%`);t.addEventListener(`input`,n),e.classList.add(`is-ready`),n()}document.querySelectorAll(`[data-compare]`).forEach(e);

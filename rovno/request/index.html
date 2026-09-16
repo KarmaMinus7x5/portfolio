@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Запись на замер · Ровно</title>
+<meta name="description" content="Выберите день и время замера. Замерщик приедет с лазерным уровнем и влагомером, смету пришлём на следующий день.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f3f0e9">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Запись на замер · Ровно">
+<meta property="og:description" content="Выберите день и время замера. Замерщик приедет с лазерным уровнем и влагомером, смету пришлём на следующий день.">
+<link rel="icon" href="/portfolio/rovno/favicon.svg" type="image/svg+xml">
+
+  <script type="module" crossorigin src="/portfolio/rovno/assets/request-DnVRw__D.js"></script>
+  <link rel="modulepreload" crossorigin href="/portfolio/rovno/assets/main-CDSC5m6J.js">
+  <link rel="modulepreload" crossorigin href="/portfolio/rovno/assets/format-DVBgFexV.js">
+  <link rel="stylesheet" crossorigin href="/portfolio/rovno/assets/main-BO5WiHxz.css">
+</head>
+<body class="page-request">
+<p class="ribbon">Концепт-проект для портфолио: компания вымышлена, заявки никуда не уходят.</p>
+
+<a class="skip" href="#main">К содержимому</a>
+<header class="site-header" data-header>
+  <div class="container site-header__row">
+    <a class="brand" href="/portfolio/rovno/" aria-label="Ровно, на главную">
+      <span class="vial" data-level aria-hidden="true"><span class="vial__bubble" data-level-bubble></span></span>
+      <span class="brand__name">Ровно</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>Меню</button>
+    <nav class="site-nav" id="site-nav" aria-label="Разделы" data-menu>
+      <a data-nav="prices" href="/portfolio/rovno/prices/">Цены</a>
+      <a data-nav="calculator" href="/portfolio/rovno/calculator/">Калькулятор</a>
+      <a data-nav="projects" href="/portfolio/rovno/projects/">Объекты</a>
+      <a data-nav="process" href="/portfolio/rovno/process/">Как работаем</a>
+      <span class="site-nav__phone mono">+7 (000) 000-00-00</span>
+      <a class="button button--small" data-nav="request" aria-current="page" href="/portfolio/rovno/request/">Вызвать замерщика</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="container request">
+  <div class="request__intro">
+    <h1>Запись на замер</h1>
+    <p class="lead">Замерщик приедет с лазерным уровнем и влагомером, это займёт около часа. Смету пришлём на следующий день.</p>
+    <p class="meta">Замер бесплатный, если заключаем договор. Если нет, он стоит 3 000 ₽.</p>
+    <p class="request__estimate meta" data-estimate-note hidden></p>
+  </div>
+  <form class="request__form sheet" data-request-form novalidate>
+    <noscript><p class="request__noscript">Запись работает с включённым JavaScript. Данные в этой демо-версии никуда не отправляются.</p></noscript>
+    <div class="field">
+      <label for="req-name">Как к вам обращаться</label>
+      <input id="req-name" name="name" autocomplete="given-name" aria-describedby="req-name-error" required>
+      <p class="field__error" id="req-name-error" hidden>Напишите имя, хотя бы две буквы.</p>
+    </div>
+    <div class="field">
+      <label for="req-phone">Телефон</label>
+      <input id="req-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" aria-describedby="req-phone-error" required>
+      <p class="field__error" id="req-phone-error" hidden>Нужен номер из 11 цифр.</p>
+    </div>
+    <fieldset class="field">
+      <legend>Что ремонтируем</legend>
+      <div class="segmented">
+        <label><input type="radio" name="home" value="new" checked> Новостройка</label>
+        <label><input type="radio" name="home" value="secondary"> Вторичка</label>
+      </div>
+    </fieldset>
+    <div class="field">
+      <label for="req-area">Площадь, м²</label>
+      <input id="req-area" name="area" type="number" min="15" max="250" inputmode="numeric" value="54">
+    </div>
+    <fieldset class="field">
+      <legend>День замера</legend>
+      <div class="days" data-days></div>
+    </fieldset>
+    <fieldset class="field" aria-describedby="req-slot-error">
+      <legend>Время</legend>
+      <div class="slots" data-slots></div>
+      <p class="field__error" id="req-slot-error" hidden>Выберите свободное время.</p>
+    </fieldset>
+    <div class="field">
+      <label for="req-comment">Комментарий <span class="meta">необязательно</span></label>
+      <textarea id="req-comment" name="comment" rows="3" placeholder="Этаж, код домофона, что беспокоит"></textarea>
+    </div>
+    <div class="field">
+      <label for="req-photos">Фото квартиры <span class="meta">до 5 штук, остаются в вашем браузере</span></label>
+      <input id="req-photos" name="photos" type="file" accept="image/*" multiple>
+      <ul class="photo-previews" data-previews></ul>
+    </div>
+    <input type="hidden" name="estimate">
+    <button class="button" type="submit" disabled data-request-submit>Записаться на замер</button>
+    <p class="meta">Демо-версия: форма проверяет поля и ничего не отправляет.</p>
+  </form>
+  <section class="request__done sheet" data-request-done tabindex="-1" hidden>
+    <p class="stamp" aria-hidden="true">Демо</p>
+    <h2 data-done-title></h2>
+    <p data-done-text></p>
+    <p class="meta">Это концепт-сайт: заявка никуда не ушла, данные остались только на этой странице.</p>
+    <button class="button button--ghost" type="button" data-request-again>Изменить заявку</button>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div>
+      <p class="brand__name">Ровно</p>
+      <p class="site-footer__tagline">Ремонт квартир с ценой работ в договоре.</p>
+    </div>
+    <nav class="site-footer__nav" aria-label="Разделы в подвале">
+      <a href="/portfolio/rovno/prices/">Цены</a>
+      <a href="/portfolio/rovno/calculator/">Калькулятор</a>
+      <a href="/portfolio/rovno/projects/">Объекты</a>
+      <a href="/portfolio/rovno/process/">Как работаем</a>
+      <a href="/portfolio/rovno/request/">Замер</a>
+    </nav>
+    <dl class="site-footer__contacts">
+      <div><dt>Телефон</dt><dd class="mono">+7 (000) 000-00-00</dd></div>
+      <div><dt>Почта</dt><dd class="mono">hello@rovno.example</dd></div>
+      <div><dt>Работаем</dt><dd>пн–сб, 9:00–19:00</dd></div>
+    </dl>
+  </div>
+  <div class="container site-footer__legal">
+    <p>Концепт-проект. Компания, объекты и отзывы вымышлены, совпадения случайны. <a href="/portfolio/rovno/credits/">Фотографии</a> с Unsplash.</p>
+    <p class="mono">2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
