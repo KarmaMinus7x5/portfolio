@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пробный урок · Дробь</title>
+<meta name="description" content="Бесплатный пробный урок в группе: выберите класс и время в расписании на неделю вперёд.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#fcfcf9">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Пробный урок · Дробь">
+<meta property="og:description" content="Бесплатный пробный урок в группе: выберите класс и время в расписании на неделю вперёд.">
+<link rel="icon" href="/portfolio/drob/favicon.svg" type="image/svg+xml">
+
+  <script type="module" crossorigin src="/portfolio/drob/assets/trial-BAOASLQY.js"></script>
+  <link rel="modulepreload" crossorigin href="/portfolio/drob/assets/main-14_S-D6x.js">
+  <link rel="modulepreload" crossorigin href="/portfolio/drob/assets/courses-SksAIa3R.js">
+  <link rel="modulepreload" crossorigin href="/portfolio/drob/assets/format-CndpaANK.js">
+  <link rel="stylesheet" crossorigin href="/portfolio/drob/assets/main-BmHNqBPP.css">
+</head>
+<body class="page-trial">
+<p class="ribbon">Концепт-проект для портфолио: школа вымышлена, заявки никуда не уходят.</p>
+
+<a class="skip" href="#main">К содержимому</a>
+<header class="site-header" data-header>
+  <div class="container site-header__row">
+    <a class="brand" href="/portfolio/drob/" aria-label="Онлайн-школа «Дробь», на главную">
+      <span class="brand__mark" aria-hidden="true"><span>1</span><span>2</span></span>
+      <span class="brand__text"><span class="brand__name">Дробь</span><span class="brand__kind">онлайн-школа математики</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>Меню</button>
+    <nav class="site-nav" id="site-nav" aria-label="Разделы" data-menu>
+      <a data-nav="test" href="/portfolio/drob/test/">Диагностика</a>
+      <a data-nav="courses" href="/portfolio/drob/courses/">Курсы и цены</a>
+      <a data-nav="teachers" href="/portfolio/drob/teachers/">Преподаватели</a>
+      <a class="button button--small" data-nav="trial" aria-current="page" href="/portfolio/drob/trial/">Пробный урок</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container page-head">
+    <h1>Пробный урок</h1>
+    <p class="lead">Бесплатно, в настоящей группе, 60 или 90 минут. Можно просто посидеть и посмотреть, отвечать не обязательно.</p>
+  </div>
+
+  <div class="container trial" data-trial-root>
+    <form class="trial__form" id="trial-form" data-trial novalidate>
+      <noscript><p class="trial-noscript">Расписание работает с включённым JavaScript. Записаться можно по телефону +7 (000) 000-00-00.</p></noscript>
+      <fieldset class="trial-step">
+        <legend class="trial-step__title">Класс</legend>
+        <div class="chips"><label class="chip"><input type="radio" name="grade" value="" checked> Все</label><label class="chip"><input type="radio" name="grade" value="7"> 7 класс</label><label class="chip"><input type="radio" name="grade" value="8"> 8 класс</label><label class="chip"><input type="radio" name="grade" value="9"> 9 класс</label><label class="chip"><input type="radio" name="grade" value="10"> 10 класс</label><label class="chip"><input type="radio" name="grade" value="11"> 11 класс</label></div>
+        <p class="meta trial__filter-note" data-trial-note hidden></p>
+      </fieldset>
+
+      <fieldset class="trial-step" aria-describedby="tr-lesson-error">
+        <legend class="trial-step__title">Урок на неделе</legend>
+        <div class="week" data-week></div>
+        <p class="field__error" id="tr-lesson-error" hidden>Выберите урок, где есть места.</p>
+      </fieldset>
+
+      <fieldset class="trial-step trial__contacts">
+        <legend class="trial-step__title">Кого записываем</legend>
+        <div class="field">
+          <label for="tr-student">Имя ученика</label>
+          <input id="tr-student" name="student" autocomplete="off" maxlength="60" aria-describedby="tr-student-error" required>
+          <p class="field__error" id="tr-student-error" hidden>Напишите имя, хотя бы две буквы.</p>
+        </div>
+        <div class="field">
+          <label for="tr-phone">Телефон родителя</label>
+          <input id="tr-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" aria-describedby="tr-phone-error" required>
+          <p class="field__error" id="tr-phone-error" hidden>Нужен номер из 11 цифр.</p>
+        </div>
+        <fieldset class="field">
+          <legend>Как напомнить об уроке</legend>
+          <div class="segmented">
+            <label><input type="radio" name="remind" value="call" checked> Позвонить</label>
+            <label><input type="radio" name="remind" value="sms"> Сообщением</label>
+          </div>
+        </fieldset>
+        <p class="trial__result meta" data-trial-result hidden></p>
+        <label class="check"><input type="checkbox" name="consent" aria-describedby="tr-consent-error"> <span>Я родитель или ученик старше 14 лет и согласен на обработку персональных данных</span></label>
+        <p class="field__error" id="tr-consent-error" hidden>Без согласия записать не получится.</p>
+        <button class="button" type="submit" disabled data-trial-submit>Записаться на пробный урок</button>
+        <p class="meta">Демо-версия: форма проверяет поля и ничего не отправляет.</p>
+      </fieldset>
+    </form>
+
+    <section class="trial__done sheet grid-paper sheet--margin" data-trial-done tabindex="-1" aria-labelledby="trial-done-title" hidden>
+      <p class="trial__done-note hand" aria-hidden="true">ждём на уроке!</p>
+      <h2 id="trial-done-title" data-done-title>Записали</h2>
+      <p class="lead" data-done-text></p>
+      <p class="meta">Это концепт-сайт: запись никуда не ушла, данные остались только на этой странице.</p>
+      <button class="button button--ghost" type="button" data-done-again>Выбрать другое время</button>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div>
+      <p class="site-footer__name">Дробь</p>
+      <p class="site-footer__line">Онлайн-школа математики для 7–11 классов. Сначала находим пробел, потом учим.</p>
+    </div>
+    <nav class="site-footer__nav" aria-label="Разделы в подвале">
+      <a href="/portfolio/drob/test/">Диагностика</a>
+      <a href="/portfolio/drob/courses/">Курсы и цены</a>
+      <a href="/portfolio/drob/teachers/">Преподаватели</a>
+      <a href="/portfolio/drob/trial/">Пробный урок</a>
+    </nav>
+    <dl class="site-footer__contacts">
+      <div><dt>Телефон</dt><dd>+7 (000) 000-00-00</dd></div>
+      <div><dt>Почта</dt><dd>hello@drob.example</dd></div>
+      <div><dt>Отвечаем</dt><dd>пн–сб, 10:00–20:00 по Москве</dd></div>
+    </dl>
+  </div>
+  <div class="container site-footer__legal">
+    <p>Концепт-проект. Школа, преподаватели и ученики вымышлены, совпадения случайны. <a href="/portfolio/drob/credits/">Фотографии</a> с Unsplash.</p>
+    <p>2026</p>
+  </div>
+</footer>
+
+</body>
+</html>

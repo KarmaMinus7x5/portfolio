@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Диагностика по математике · Дробь</title>
+<meta name="description" content="Бесплатный тест на 8–12 задач по программе вашего класса. Покажем карту тем: что крепко, что шатается и где пробел.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#fcfcf9">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Диагностика по математике · Дробь">
+<meta property="og:description" content="Бесплатный тест на 8–12 задач по программе вашего класса. Покажем карту тем: что крепко, что шатается и где пробел.">
+<link rel="icon" href="/portfolio/drob/favicon.svg" type="image/svg+xml">
+
+  <script type="module" crossorigin src="/portfolio/drob/assets/test-D7Juewc3.js"></script>
+  <link rel="modulepreload" crossorigin href="/portfolio/drob/assets/main-14_S-D6x.js">
+  <link rel="modulepreload" crossorigin href="/portfolio/drob/assets/courses-SksAIa3R.js">
+  <link rel="modulepreload" crossorigin href="/portfolio/drob/assets/format-CndpaANK.js">
+  <link rel="stylesheet" crossorigin href="/portfolio/drob/assets/main-BmHNqBPP.css">
+</head>
+<body class="page-test">
+<p class="ribbon">Концепт-проект для портфолио: школа вымышлена, заявки никуда не уходят.</p>
+
+<a class="skip" href="#main">К содержимому</a>
+<header class="site-header" data-header>
+  <div class="container site-header__row">
+    <a class="brand" href="/portfolio/drob/" aria-label="Онлайн-школа «Дробь», на главную">
+      <span class="brand__mark" aria-hidden="true"><span>1</span><span>2</span></span>
+      <span class="brand__text"><span class="brand__name">Дробь</span><span class="brand__kind">онлайн-школа математики</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>Меню</button>
+    <nav class="site-nav" id="site-nav" aria-label="Разделы" data-menu>
+      <a data-nav="test" aria-current="page" href="/portfolio/drob/test/">Диагностика</a>
+      <a data-nav="courses" href="/portfolio/drob/courses/">Курсы и цены</a>
+      <a data-nav="teachers" href="/portfolio/drob/teachers/">Преподаватели</a>
+      <a class="button button--small" data-nav="trial" href="/portfolio/drob/trial/">Пробный урок</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container test" data-test>
+    <section class="test-intro" data-screen="intro" aria-labelledby="intro-title">
+      <div class="test-intro__text">
+        <h1 id="intro-title">Диагностика</h1>
+        <p class="lead">От восьми до двенадцати задач по программе вашего класса, около двадцати минут. Калькулятор не нужен, черновик пригодится.</p>
+        <ul class="checks">
+          <li>Не знаете ответ? Жмите «Не знаю». Угадывание только испортит карту.</li>
+          <li>Время идёт, но не ограничено: торопиться не нужно.</li>
+          <li>Регистрации нет, ответы никуда не отправляются.</li>
+        </ul>
+      </div>
+      <form class="test-start sheet grid-paper" data-start>
+        <noscript><p class="test-noscript">Тест работает с включённым JavaScript.</p></noscript>
+        <fieldset>
+          <legend class="test-start__legend">В каком вы классе</legend>
+          <div class="chips"><label class="chip"><input type="radio" name="grade" value="7"> 7 класс</label><label class="chip"><input type="radio" name="grade" value="8"> 8 класс</label><label class="chip"><input type="radio" name="grade" value="9"> 9 класс</label><label class="chip"><input type="radio" name="grade" value="10"> 10 класс</label><label class="chip"><input type="radio" name="grade" value="11"> 11 класс</label></div>
+        </fieldset>
+        <fieldset>
+          <legend class="test-start__legend">Что важнее сейчас</legend>
+          <div class="segmented">
+            <label><input type="radio" name="goal" value="school" checked> Оценки в школе</label>
+            <label><input type="radio" name="goal" value="exam"> Экзамен</label>
+          </div>
+        </fieldset>
+        <p class="field__error" id="start-error" hidden>Выберите класс.</p>
+        <button class="button" type="submit" disabled data-start-button>Начать</button>
+      </form>
+    </section>
+
+    <section class="question" data-screen="question" aria-labelledby="q-title" hidden>
+      <div class="question__top">
+        <p class="question__count" id="q-count" aria-live="polite">Вопрос <span class="num" data-q-index>1</span> из <span class="num" data-q-total>12</span></p>
+        <p class="question__timer meta">идёт <span class="num" data-timer>00:00</span></p>
+      </div>
+      <ol class="cells" data-cells aria-hidden="true"></ol>
+      <form class="question__card sheet grid-paper sheet--margin" data-question novalidate>
+        <p class="question__topic meta" data-q-topic></p>
+        <h2 class="question__text" id="q-title" data-q-text tabindex="-1"></h2>
+        <div class="question__answer" data-q-answer></div>
+        <div class="question__actions">
+          <button class="button" type="submit" data-q-next disabled>Дальше</button>
+          <button class="button button--ghost" type="button" data-q-skip>Не знаю</button>
+          <button class="link" type="button" data-q-back>Назад</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="result" data-screen="result" aria-labelledby="result-title" tabindex="-1" hidden>
+      <div class="result__head">
+        <p class="meta" data-result-meta></p>
+        <h2 class="result__level" id="result-title" data-result-level></h2>
+        <p class="lead" data-result-score></p>
+      </div>
+      <div class="result__grid">
+        <div class="result__map sheet">
+          <h3 class="result__subtitle">Карта тем</h3>
+          <ul class="skill-map" data-result-map></ul>
+        </div>
+        <div class="result__advice sheet grid-paper">
+          <h3 class="result__subtitle">С чего начать</h3>
+          <p class="hand result__note" data-result-note></p>
+          <div data-result-course></div>
+          <div class="result__actions">
+            <a class="button" href="/portfolio/drob/trial/" data-result-trial>Пробный урок с этим результатом</a>
+            <button class="link" type="button" data-result-copy>Скопировать ссылку для родителей</button>
+            <p class="meta" data-result-copied aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+      <h3 class="result__review-title">Разбор ответов</h3>
+      <ol class="review" data-result-review></ol>
+      <p><button class="button button--ghost" type="button" data-result-again>Пройти заново</button></p>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div>
+      <p class="site-footer__name">Дробь</p>
+      <p class="site-footer__line">Онлайн-школа математики для 7–11 классов. Сначала находим пробел, потом учим.</p>
+    </div>
+    <nav class="site-footer__nav" aria-label="Разделы в подвале">
+      <a href="/portfolio/drob/test/">Диагностика</a>
+      <a href="/portfolio/drob/courses/">Курсы и цены</a>
+      <a href="/portfolio/drob/teachers/">Преподаватели</a>
+      <a href="/portfolio/drob/trial/">Пробный урок</a>
+    </nav>
+    <dl class="site-footer__contacts">
+      <div><dt>Телефон</dt><dd>+7 (000) 000-00-00</dd></div>
+      <div><dt>Почта</dt><dd>hello@drob.example</dd></div>
+      <div><dt>Отвечаем</dt><dd>пн–сб, 10:00–20:00 по Москве</dd></div>
+    </dl>
+  </div>
+  <div class="container site-footer__legal">
+    <p>Концепт-проект. Школа, преподаватели и ученики вымышлены, совпадения случайны. <a href="/portfolio/drob/credits/">Фотографии</a> с Unsplash.</p>
+    <p>2026</p>
+  </div>
+</footer>
+
+</body>
+</html>

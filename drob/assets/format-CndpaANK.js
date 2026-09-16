@@ -1,0 +1,1 @@
+var e={"&":`&amp;`,"<":`&lt;`,">":`&gt;`,'"':`&quot;`,"'":`&#39;`};function t(e){return String(Math.round(e)).replace(/\B(?=(\d{3})+(?!\d))/g,`\xA0`)}function n(e){return`${t(e)} ₽`}function r(e,[t,n,r]){let i=e%10,a=e%100;return i===1&&a!==11?t:i>=2&&i<=4&&(a<12||a>14)?n:r}function i(t){return String(t).replace(/[&<>"']/g,t=>e[t])}export{n,r,i as t};
