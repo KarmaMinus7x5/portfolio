@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Меню · Угли</title>
+<meta name="description" content="Меню ресторана «Угли»: где готовится каждое блюдо, сколько ждать, вес и аллергены. Фильтры по огню, диете и времени.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#141210">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Меню · Угли">
+<meta property="og:description" content="Меню ресторана «Угли»: где готовится каждое блюдо, сколько ждать, вес и аллергены. Фильтры по огню, диете и времени.">
+<link rel="icon" href="/portfolio/ugli/favicon.svg" type="image/svg+xml">
+
+  <script type="module" crossorigin src="/portfolio/ugli/assets/menu-DEnjXm-Y.js"></script>
+  <link rel="modulepreload" crossorigin href="/portfolio/ugli/assets/main-hLZncxX_.js">
+  <link rel="stylesheet" crossorigin href="/portfolio/ugli/assets/main-C54UaCX7.css">
+</head>
+<body class="page-menu">
+<p class="ribbon">Концепт-проект для портфолио: ресторан вымышлен, бронь никуда не уходит.</p>
+
+<a class="skip" href="#main">К содержимому</a>
+<header class="site-header" data-header>
+  <div class="container site-header__row">
+    <a class="brand" href="/portfolio/ugli/" aria-label="Ресторан «Угли», на главную">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 30c1-6 5-9 9-9s6 3 6 9z"/><path d="M17 31c0-7 5-12 10-12s8 5 8 12z"/><path d="M11 19c0-5 3-9 7-9s6 4 6 9z" class="brand__hot"/></svg>
+
+      <span class="brand__text"><span class="brand__name">Угли</span><span class="brand__kind">ресторан у огня</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>Разделы</button>
+    <nav class="site-nav" id="site-nav" aria-label="Разделы" data-menu>
+      <a data-nav="menu" aria-current="page" href="/portfolio/ugli/menu/">Меню</a>
+      <a data-nav="kitchen" href="/portfolio/ugli/kitchen/">Кухня</a>
+      <a data-nav="events" href="/portfolio/ugli/events/">Банкеты</a>
+      <span class="status" data-open-status>Пн–чт 12–23, пт–сб 12–01, вс 12–22</span>
+      <a class="button button--small" data-nav="booking" href="/portfolio/ugli/booking/">Забронировать</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container page-head menu-head">
+    <h1>Меню</h1>
+    <p class="lead">У каждого блюда написано, где его готовят и сколько ждать после заказа. Вес указан в готовом виде, цены окончательные.</p>
+  </div>
+
+  <div class="container menu-layout">
+    <div class="menu-side">
+      <button class="button button--ghost menu-side__toggle" type="button" aria-expanded="false" aria-controls="menu-filters" data-filters-toggle hidden>Фильтры <span class="num" data-filters-badge></span></button>
+      <form class="menu-filters" id="menu-filters" data-menu-filters aria-label="Фильтры меню">
+        <div class="field">
+          <label for="menu-q">Найти блюдо</label>
+          <input id="menu-q" name="q" type="search" maxlength="60" autocomplete="off" placeholder="Например, лепёшка">
+        </div>
+        <fieldset class="menu-filters__group">
+          <legend>Огонь</legend>
+          <div class="chips"><label class="chip"><input type="checkbox" name="fire" value="oven"><span>Печь 380°</span> <span class="chip__count num">9</span></label><label class="chip"><input type="checkbox" name="fire" value="grill"><span>Решётка 300°</span> <span class="chip__count num">7</span></label><label class="chip"><input type="checkbox" name="fire" value="embers"><span>Угли 200°</span> <span class="chip__count num">6</span></label><label class="chip"><input type="checkbox" name="fire" value="slow"><span>Томление 110°</span> <span class="chip__count num">3</span></label><label class="chip"><input type="checkbox" name="fire" value="cold"><span>Без огня</span> <span class="chip__count num">7</span></label></div>
+        </fieldset>
+        <fieldset class="menu-filters__group">
+          <legend>Кому</legend>
+          <div class="chips"><label class="chip"><input type="checkbox" name="diet" value="veg"><span>Без мяса и рыбы</span> <span class="chip__count num">22</span></label><label class="chip"><input type="checkbox" name="diet" value="vegan"><span>Веганское</span> <span class="chip__count num">11</span></label><label class="chip"><input type="checkbox" name="diet" value="spicy"><span>Острое</span> <span class="chip__count num">4</span></label><label class="chip"><input type="checkbox" name="diet" value="share"><span>На компанию</span> <span class="chip__count num">6</span></label></div>
+        </fieldset>
+        <fieldset class="menu-filters__group">
+          <legend>Убрать аллергены</legend>
+          <div class="chips"><label class="chip"><input type="checkbox" name="no" value="gluten"><span>без: глютен</span></label><label class="chip"><input type="checkbox" name="no" value="milk"><span>без: молоко</span></label><label class="chip"><input type="checkbox" name="no" value="eggs"><span>без: яйца</span></label><label class="chip"><input type="checkbox" name="no" value="nuts"><span>без: орехи</span></label><label class="chip"><input type="checkbox" name="no" value="fish"><span>без: рыба</span></label><label class="chip"><input type="checkbox" name="no" value="sesame"><span>без: кунжут</span></label></div>
+        </fieldset>
+        <fieldset class="menu-filters__group">
+          <legend>Сколько ждать</legend>
+          <div class="segmented"><label><input type="radio" name="time" value="" checked> не важно</label><label><input type="radio" name="time" value="10"> до 10 мин</label><label><input type="radio" name="time" value="15"> до 15 мин</label><label><input type="radio" name="time" value="20"> до 20 мин</label></div>
+        </fieldset>
+        <div class="menu-filters__foot">
+          <p class="menu-filters__count" data-menu-count aria-live="polite">32 блюда</p>
+          <button class="link-arrow" type="reset" data-menu-reset hidden>Сбросить</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="menu-sheet">
+      <nav class="menu-sheet__nav" aria-label="Разделы меню"><a href="#starters">Закуски</a><a href="#bread">Лепёшки и пироги</a><a href="#mains">Основные</a><a href="#sides">Гарниры и соусы</a><a href="#desserts">Десерты</a><a href="#drinks">Напитки</a></nav>
+      <section class="menu-group" id="starters" data-group="starters" aria-labelledby="group-starters">
+<h2 id="group-starters">Закуски</h2>
+<ul class="dishes">
+<li class="dish dish--photo" data-dish="tomatoes">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Томаты из углей</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">690 ₽</p></div>
+<p class="dish__desc">Томаты доходят прямо в золе, подаём с брынзой, зелёным луком и тёплым маслом.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--embers">в углях, 200°</span><span>ждать 12 мин</span><span>220 г</span><span class="dish__diet">без мяса и рыбы</span><span>аллергены: молоко</span></p>
+</div><picture><source type="image/avif" srcset="/portfolio/ugli/img/charred-bowl-640.avif 640w, /portfolio/ugli/img/charred-bowl-1024.avif 1024w, /portfolio/ugli/img/charred-bowl-1600.avif 1600w" sizes="(max-width: 560px) 96px, 140px"><source type="image/webp" srcset="/portfolio/ugli/img/charred-bowl-640.webp 640w, /portfolio/ugli/img/charred-bowl-1024.webp 1024w, /portfolio/ugli/img/charred-bowl-1600.webp 1600w" sizes="(max-width: 560px) 96px, 140px"><img src="/portfolio/ugli/img/charred-bowl-1600.webp" width="1600" height="1073" alt="Запечённые до черноты томаты в голубой миске" loading="lazy" decoding="async" class="dish__photo" style="background-color:rgb(176 147 130)"></picture>
+</li>
+<li class="dish" data-dish="beet">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Свёкла в золе</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">640 ₽</p></div>
+<p class="dish__desc">Печём целиком два часа, режем тёплой. Козий сыр, фундук, гречишный мёд.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--embers">в углях, 200°</span><span>ждать 10 мин</span><span>200 г</span><span class="dish__diet">без мяса и рыбы</span><span>аллергены: молоко, орехи</span></p>
+</div>
+</li>
+<li class="dish" data-dish="eggplant">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Баклажан с углей</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">590 ₽</p></div>
+<p class="dish__desc">Кожица сгорает, мякоть становится копчёной. С кунжутной пастой и гранатом.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--embers">в углях, 200°</span><span>ждать 10 мин</span><span>240 г</span><span class="dish__diet">веганское</span><span>аллергены: кунжут</span></p>
+</div>
+</li>
+<li class="dish" data-dish="hummus">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Хумус с тёплым нутом</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">520 ₽</p></div>
+<p class="dish__desc">Нут обжариваем на решётке в сетке, сверху масло с копчёным чили.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--grill">на решётке, 300°</span><span>ждать 8 мин</span><span>250 г</span><span class="dish__diet">веганское, острое</span><span>аллергены: кунжут</span></p>
+</div>
+</li>
+<li class="dish" data-dish="pate">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Паштет из куриной печени</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">610 ₽</p></div>
+<p class="dish__desc">С луковым джемом и гренкой из печи.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--oven">в печи, 380°</span><span>ждать 7 мин</span><span>180 г</span><span>аллергены: молоко, глютен</span></p>
+</div>
+</li>
+<li class="dish dish--photo" data-dish="skewers">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Овощные шпажки</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">560 ₽</p></div>
+<p class="dish__desc">Перец, шампиньоны, красный лук и цукини, соус из печёного перца.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--grill">на решётке, 300°</span><span>ждать 14 мин</span><span>260 г</span><span class="dish__diet">веганское, на компанию</span><span>без основных аллергенов</span></p>
+</div><picture><source type="image/avif" srcset="/portfolio/ugli/img/skewers-640.avif 640w, /portfolio/ugli/img/skewers-1024.avif 1024w, /portfolio/ugli/img/skewers-1600.avif 1600w" sizes="(max-width: 560px) 96px, 140px"><source type="image/webp" srcset="/portfolio/ugli/img/skewers-640.webp 640w, /portfolio/ugli/img/skewers-1024.webp 1024w, /portfolio/ugli/img/skewers-1600.webp 1600w" sizes="(max-width: 560px) 96px, 140px"><img src="/portfolio/ugli/img/skewers-1600.webp" width="1600" height="1068" alt="Овощные шпажки с перцем, грибами и луком" loading="lazy" decoding="async" class="dish__photo" style="background-color:rgb(66 49 33)"></picture>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="bread" data-group="bread" aria-labelledby="group-bread">
+<h2 id="group-bread">Лепёшки и пироги</h2>
+<ul class="dishes">
+<li class="dish dish--photo" data-dish="flatbread">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Лепёшка с маслом и солью</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">290 ₽</p></div>
+<p class="dish__desc">Девяносто секунд на поду при 380°. Самое быстрое, что у нас есть.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--oven">в печи, 380°</span><span>ждать 4 мин</span><span>160 г</span><span class="dish__diet">без мяса и рыбы</span><span>аллергены: глютен, молоко</span></p>
+</div><picture><source type="image/avif" srcset="/portfolio/ugli/img/flatbread-close-640.avif 640w, /portfolio/ugli/img/flatbread-close-1024.avif 1024w, /portfolio/ugli/img/flatbread-close-1600.avif 1600w" sizes="(max-width: 560px) 96px, 140px"><source type="image/webp" srcset="/portfolio/ugli/img/flatbread-close-640.webp 640w, /portfolio/ugli/img/flatbread-close-1024.webp 1024w, /portfolio/ugli/img/flatbread-close-1600.webp 1600w" sizes="(max-width: 560px) 96px, 140px"><img src="/portfolio/ugli/img/flatbread-close-1600.webp" width="1600" height="1068" alt="Лепёшки с подпалинами на тарелке" loading="lazy" decoding="async" class="dish__photo" style="background-color:rgb(123 97 59)"></picture>
+</li>
+<li class="dish" data-dish="suluguni">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Лепёшка с сулугуни</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">540 ₽</p></div>
+<p class="dish__desc">Сыр тянется, зелень добавляем после печи, чтобы не сгорела.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--oven">в печи, 380°</span><span>ждать 6 мин</span><span>240 г</span><span class="dish__diet">без мяса и рыбы</span><span>аллергены: глютен, молоко</span></p>
+</div>
+</li>
+<li class="dish" data-dish="lamb-pie">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Пирог с бараниной и тыквой</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">780 ₽</p></div>
+<p class="dish__desc">Открытый пирог на ржаном тесте, режем на шесть кусков.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--oven">в печи, 380°</span><span>ждать 12 мин</span><span>280 г</span><span class="dish__diet">на компанию</span><span>аллергены: глютен, яйца</span></p>
+</div>
+</li>
+<li class="dish dish--photo" data-dish="bread-board">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Три лепёшки на компанию</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">990 ₽</p></div>
+<p class="dish__desc">С маслом, с сыром и с заатаром, к ним хумус и аджика.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--oven">в печи, 380°</span><span>ждать 10 мин</span><span>520 г</span><span class="dish__diet">без мяса и рыбы, на компанию</span><span>аллергены: глютен, молоко, кунжут</span></p>
+</div><picture><source type="image/avif" srcset="/portfolio/ugli/img/flatbreads-640.avif 640w, /portfolio/ugli/img/flatbreads-1024.avif 1024w, /portfolio/ugli/img/flatbreads-1600.avif 1600w" sizes="(max-width: 560px) 96px, 140px"><source type="image/webp" srcset="/portfolio/ugli/img/flatbreads-640.webp 640w, /portfolio/ugli/img/flatbreads-1024.webp 1024w, /portfolio/ugli/img/flatbreads-1600.webp 1600w" sizes="(max-width: 560px) 96px, 140px"><img src="/portfolio/ugli/img/flatbreads-1600.webp" width="1600" height="1071" alt="Лепёшки из печи на деревянной доске" loading="lazy" decoding="async" class="dish__photo" style="background-color:rgb(62 49 35)"></picture>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="mains" data-group="mains" aria-labelledby="group-mains">
+<h2 id="group-mains">Основные</h2>
+<ul class="dishes">
+<li class="dish dish--photo" data-dish="machete">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Стейк мачете</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">1 890 ₽</p></div>
+<p class="dish__desc">Пашина, 250 граммов. Жарим быстро на самом горячем краю решётки.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--grill">на решётке, 300°</span><span>ждать 18 мин</span><span>250 г</span><span>без основных аллергенов</span></p>
+</div><picture><source type="image/avif" srcset="/portfolio/ugli/img/steak-640.avif 640w, /portfolio/ugli/img/steak-1024.avif 1024w, /portfolio/ugli/img/steak-1600.avif 1600w" sizes="(max-width: 560px) 96px, 140px"><source type="image/webp" srcset="/portfolio/ugli/img/steak-640.webp 640w, /portfolio/ugli/img/steak-1024.webp 1024w, /portfolio/ugli/img/steak-1600.webp 1600w" sizes="(max-width: 560px) 96px, 140px"><img src="/portfolio/ugli/img/steak-1600.webp" width="1600" height="900" alt="Нарезанный стейк на деревянной доске" loading="lazy" decoding="async" class="dish__photo" style="background-color:rgb(84 64 58)"></picture>
+</li>
+<li class="dish" data-dish="ribeye">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Рибай на кости на двоих</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">4 900 ₽</p></div>
+<p class="dish__desc">Около 700 граммов. Режем при вас, степень прожарки обсуждаем до огня.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--grill">на решётке, 300°</span><span>ждать 30 мин</span><span>700 г</span><span class="dish__diet">на компанию</span><span>без основных аллергенов</span></p>
+</div>
+</li>
+<li class="dish dish--photo" data-dish="mackerel">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Скумбрия на решётке</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">890 ₽</p></div>
+<p class="dish__desc">Целиком, с лимоном и укропным маслом. Кожа хрустит, мясо сочное.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--grill">на решётке, 300°</span><span>ждать 16 мин</span><span>350 г</span><span>аллергены: рыба</span></p>
+</div><picture><source type="image/avif" srcset="/portfolio/ugli/img/fish-grill-640.avif 640w, /portfolio/ugli/img/fish-grill-1024.avif 1024w, /portfolio/ugli/img/fish-grill-1600.avif 1600w" sizes="(max-width: 560px) 96px, 140px"><source type="image/webp" srcset="/portfolio/ugli/img/fish-grill-640.webp 640w, /portfolio/ugli/img/fish-grill-1024.webp 1024w, /portfolio/ugli/img/fish-grill-1600.webp 1600w" sizes="(max-width: 560px) 96px, 140px"><img src="/portfolio/ugli/img/fish-grill-1600.webp" width="1600" height="2000" alt="Четыре рыбы на решётке над углями, вид сверху" loading="lazy" decoding="async" class="dish__photo" style="background-color:rgb(39 34 31)"></picture>
+</li>
+<li class="dish" data-dish="dorado">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Дорадо в печи</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">1 290 ₽</p></div>
+<p class="dish__desc">С фенхелем и апельсином, запекаем в чугунной сковороде.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--oven">в печи, 380°</span><span>ждать 20 мин</span><span>400 г</span><span>аллергены: рыба</span></p>
+</div>
+</li>
+<li class="dish" data-dish="chicken">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Цыплёнок с углей</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">990 ₽</p></div>
+<p class="dish__desc">Половина цыплёнка в маринаде с копчёной паприкой и чесноком.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--grill">на решётке, 300°</span><span>ждать 25 мин</span><span>450 г</span><span class="dish__diet">острое</span><span>без основных аллергенов</span></p>
+</div>
+</li>
+<li class="dish" data-dish="cheeks">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Говяжьи щёки</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">1 350 ₽</p></div>
+<p class="dish__desc">Томились ночью в остывающей печи семь часов. С пюре из печёной тыквы.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--slow">томится, 110°</span><span>ждать 8 мин</span><span>330 г</span><span>аллергены: молоко</span></p>
+</div>
+</li>
+<li class="dish" data-dish="ribs">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Рёбра в котелке</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">1 190 ₽</p></div>
+<p class="dish__desc">Свиные рёбра с яблоком и можжевельником, мясо само отходит от кости.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--slow">томится, 110°</span><span>ждать 10 мин</span><span>400 г</span><span class="dish__diet">на компанию</span><span>без основных аллергенов</span></p>
+</div>
+</li>
+<li class="dish dish--photo" data-dish="beans">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Фасоль в чугунке</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">620 ₽</p></div>
+<p class="dish__desc">Белая фасоль с томатами и копчёной паприкой, сверху запечённый сыр.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--slow">томится, 110°</span><span>ждать 8 мин</span><span>300 г</span><span class="dish__diet">без мяса и рыбы, острое</span><span>аллергены: молоко</span></p>
+</div><picture><source type="image/avif" srcset="/portfolio/ugli/img/cast-iron-640.avif 640w, /portfolio/ugli/img/cast-iron-1024.avif 1024w, /portfolio/ugli/img/cast-iron-1600.avif 1600w" sizes="(max-width: 560px) 96px, 140px"><source type="image/webp" srcset="/portfolio/ugli/img/cast-iron-640.webp 640w, /portfolio/ugli/img/cast-iron-1024.webp 1024w, /portfolio/ugli/img/cast-iron-1600.webp 1600w" sizes="(max-width: 560px) 96px, 140px"><img src="/portfolio/ugli/img/cast-iron-1600.webp" width="1600" height="2400" alt="Чугунный котелок на углях в кирпичной печи" loading="lazy" decoding="async" class="dish__photo" style="background-color:rgb(95 81 64)"></picture>
+</li>
+<li class="dish" data-dish="cauliflower">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Цветная капуста целиком</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">720 ₽</p></div>
+<p class="dish__desc">Запекаем кочан целиком, подаём с тахини и зеленью. Хватит на двоих.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--oven">в печи, 380°</span><span>ждать 18 мин</span><span>450 г</span><span class="dish__diet">веганское, на компанию</span><span>аллергены: кунжут</span></p>
+</div>
+</li>
+<li class="dish" data-dish="kebab">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Кебаб из баранины</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">1 090 ₽</p></div>
+<p class="dish__desc">Рубленая баранина на углях, лаваш из печи, лук с сумахом.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--grill">на решётке, 300°</span><span>ждать 15 мин</span><span>300 г</span><span>аллергены: глютен</span></p>
+</div>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="sides" data-group="sides" aria-labelledby="group-sides">
+<h2 id="group-sides">Гарниры и соусы</h2>
+<ul class="dishes">
+<li class="dish" data-dish="potato">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Картофель в золе</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">390 ₽</p></div>
+<p class="dish__desc">Со сметаной и шнитт-луком.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--embers">в углях, 200°</span><span>ждать 20 мин</span><span>250 г</span><span class="dish__diet">без мяса и рыбы</span><span>аллергены: молоко</span></p>
+</div>
+</li>
+<li class="dish" data-dish="pumpkin">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Печёная тыква</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">380 ₽</p></div>
+<p class="dish__desc">С шалфеем и жареными тыквенными семечками.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--oven">в печи, 380°</span><span>ждать 12 мин</span><span>220 г</span><span class="dish__diet">веганское</span><span>без основных аллергенов</span></p>
+</div>
+</li>
+<li class="dish" data-dish="greens">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Зелёный салат</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">420 ₽</p></div>
+<p class="dish__desc">Листья, огурец, редис и лимонная заправка. Огонь сюда не допускаем.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--cold">без огня</span><span>ждать 5 мин</span><span>180 г</span><span class="dish__diet">веганское</span><span>без основных аллергенов</span></p>
+</div>
+</li>
+<li class="dish" data-dish="pepper-sauce">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Соус из печёного перца</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">150 ₽</p></div>
+<p class="dish__desc">Перец печём утром, соус готов к открытию.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--cold">без огня</span><span>ждать 2 мин</span><span>60 г</span><span class="dish__diet">веганское</span><span>без основных аллергенов</span></p>
+</div>
+</li>
+<li class="dish" data-dish="adjika">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Аджика с углей</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">150 ₽</p></div>
+<p class="dish__desc">Острая, из перца и томатов, обожжённых на углях.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--cold">без огня</span><span>ждать 2 мин</span><span>60 г</span><span class="dish__diet">веганское, острое</span><span>без основных аллергенов</span></p>
+</div>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="desserts" data-group="desserts" aria-labelledby="group-desserts">
+<h2 id="group-desserts">Десерты</h2>
+<ul class="dishes">
+<li class="dish dish--photo" data-dish="fondant">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Шоколадный фондан</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">590 ₽</p></div>
+<p class="dish__desc">Двенадцать минут в печи, внутри жидкий шоколад. С кремом и какао.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--oven">в печи, 380°</span><span>ждать 12 мин</span><span>150 г</span><span class="dish__diet">без мяса и рыбы</span><span>аллергены: глютен, молоко, яйца</span></p>
+</div><picture><source type="image/avif" srcset="/portfolio/ugli/img/fondant-640.avif 640w, /portfolio/ugli/img/fondant-1024.avif 1024w, /portfolio/ugli/img/fondant-1600.avif 1600w" sizes="(max-width: 560px) 96px, 140px"><source type="image/webp" srcset="/portfolio/ugli/img/fondant-640.webp 640w, /portfolio/ugli/img/fondant-1024.webp 1024w, /portfolio/ugli/img/fondant-1600.webp 1600w" sizes="(max-width: 560px) 96px, 140px"><img src="/portfolio/ugli/img/fondant-1600.webp" width="1600" height="1067" alt="Шоколадный десерт с кремом и какао" loading="lazy" decoding="async" class="dish__photo" style="background-color:rgb(60 53 48)"></picture>
+</li>
+<li class="dish" data-dish="apple">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Яблоко из углей</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">450 ₽</p></div>
+<p class="dish__desc">Печём в фольге в углях, внутри грецкий орех и мёд.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--embers">в углях, 200°</span><span>ждать 15 мин</span><span>200 г</span><span class="dish__diet">без мяса и рыбы</span><span>аллергены: орехи</span></p>
+</div>
+</li>
+<li class="dish" data-dish="ice-cream">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Мороженое с солёной карамелью</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">390 ₽</p></div>
+<p class="dish__desc">Карамель варим на краю печи.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--cold">без огня</span><span>ждать 3 мин</span><span>120 г</span><span class="dish__diet">без мяса и рыбы</span><span>аллергены: молоко, яйца</span></p>
+</div>
+</li>
+</ul>
+</section>
+<section class="menu-group" id="drinks" data-group="drinks" aria-labelledby="group-drinks">
+<h2 id="group-drinks">Напитки</h2>
+<ul class="dishes">
+<li class="dish" data-dish="lemonade">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Лимонад из печёного лимона</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">390 ₽</p></div>
+<p class="dish__desc">С розмарином. Лимоны печём, чтобы ушла горечь.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--cold">без огня</span><span>ждать 3 мин</span><span>400 мл</span><span class="dish__diet">веганское</span><span>без основных аллергенов</span></p>
+</div>
+</li>
+<li class="dish" data-dish="sbiten">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Горячий сбитень</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">350 ₽</p></div>
+<p class="dish__desc">Мёд, имбирь, гвоздика. Греем в медном ковше на углях.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--embers">в углях, 200°</span><span>ждать 5 мин</span><span>300 мл</span><span class="dish__diet">без мяса и рыбы</span><span>без основных аллергенов</span></p>
+</div>
+</li>
+<li class="dish dish--photo" data-dish="smoke">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Коктейль «Дым»</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">790 ₽</p></div>
+<p class="dish__desc">Ржаной виски, сироп на копчёном сахаре, апельсин. Для гостей старше 18 лет.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--cold">без огня</span><span>ждать 5 мин</span><span>150 мл</span><span class="dish__diet">веганское</span><span>без основных аллергенов</span></p>
+</div><picture><source type="image/avif" srcset="/portfolio/ugli/img/cocktail-640.avif 640w, /portfolio/ugli/img/cocktail-1024.avif 1024w, /portfolio/ugli/img/cocktail-1600.avif 1600w" sizes="(max-width: 560px) 96px, 140px"><source type="image/webp" srcset="/portfolio/ugli/img/cocktail-640.webp 640w, /portfolio/ugli/img/cocktail-1024.webp 1024w, /portfolio/ugli/img/cocktail-1600.webp 1600w" sizes="(max-width: 560px) 96px, 140px"><img src="/portfolio/ugli/img/cocktail-1600.webp" width="1600" height="1067" alt="Коктейль со льдом и половинка апельсина на барной стойке" loading="lazy" decoding="async" class="dish__photo" style="background-color:rgb(54 39 22)"></picture>
+</li>
+<li class="dish" data-dish="mors">
+<div class="dish__body">
+<div class="dish__head"><h3 class="dish__name">Клюквенный морс</h3><span class="dish__leader" aria-hidden="true"></span><p class="dish__price num">290 ₽</p></div>
+<p class="dish__desc">Кисло-сладкий, без добавленного сахара.</p>
+<p class="dish__meta"><span class="dish__fire dish__fire--cold">без огня</span><span>ждать 2 мин</span><span>400 мл</span><span class="dish__diet">веганское</span><span>без основных аллергенов</span></p>
+</div>
+</li>
+</ul>
+</section>
+      <div class="menu-empty" data-menu-empty hidden>
+        <p class="menu-empty__title">Такого блюда у нас нет</p>
+        <p>Попробуйте убрать часть фильтров. Если нужно что-то особенное, скажите официанту: печь горячая весь вечер.</p>
+      </div>
+      <p class="menu-sheet__foot">Если у вас аллергия, предупредите официанта: кухня одна, следы орехов и кунжута возможны в любом блюде.</p>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <p class="site-footer__name">Угли</p>
+      <p class="site-footer__line">Готовим на огне с 12:00 до последних дров.</p>
+    </div>
+    <dl class="site-footer__hours">
+      <div><dt>Пн–чт</dt><dd class="num">12:00–23:00</dd></div>
+      <div><dt>Пт–сб</dt><dd class="num">12:00–01:00</dd></div>
+      <div><dt>Вс</dt><dd class="num">12:00–22:00</dd></div>
+      <div><dt>Кухня</dt><dd>до часа перед закрытием</dd></div>
+    </dl>
+    <nav class="site-footer__nav" aria-label="Разделы в подвале">
+      <a href="/portfolio/ugli/menu/">Меню</a>
+      <a href="/portfolio/ugli/booking/">Бронь стола</a>
+      <a href="/portfolio/ugli/events/">Банкеты</a>
+      <a href="/portfolio/ugli/kitchen/">Кухня и поставщики</a>
+    </nav>
+    <dl class="site-footer__contacts">
+      <div><dt>Телефон</dt><dd class="num">+7 (000) 000-00-00</dd></div>
+      <div><dt>Почта</dt><dd>hello@ugli.example</dd></div>
+      <div><dt>Адрес</dt><dd>не указан: ресторан вымышлен</dd></div>
+    </dl>
+  </div>
+  <div class="container site-footer__legal">
+    <p>Концепт-проект. Ресторан, блюда, цены и гости вымышлены, совпадения случайны. <a href="/portfolio/ugli/credits/">Фотографии</a> с Unsplash.</p>
+    <p>2026</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бронь стола · Угли</title>
+<meta name="description" content="Выберите число гостей, день и время, а стол прямо на схеме зала: у окна, на диване или за стойкой у печи.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#141210">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Бронь стола · Угли">
+<meta property="og:description" content="Выберите число гостей, день и время, а стол прямо на схеме зала: у окна, на диване или за стойкой у печи.">
+<link rel="icon" href="/portfolio/ugli/favicon.svg" type="image/svg+xml">
+
+  <script type="module" crossorigin src="/portfolio/ugli/assets/booking-C-Ubq3Ql.js"></script>
+  <link rel="modulepreload" crossorigin href="/portfolio/ugli/assets/main-hLZncxX_.js">
+  <link rel="modulepreload" crossorigin href="/portfolio/ugli/assets/phone-Ba-eEj1V.js">
+  <link rel="stylesheet" crossorigin href="/portfolio/ugli/assets/main-C54UaCX7.css">
+</head>
+<body class="page-booking">
+<p class="ribbon">Концепт-проект для портфолио: ресторан вымышлен, бронь никуда не уходит.</p>
+
+<a class="skip" href="#main">К содержимому</a>
+<header class="site-header" data-header>
+  <div class="container site-header__row">
+    <a class="brand" href="/portfolio/ugli/" aria-label="Ресторан «Угли», на главную">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 30c1-6 5-9 9-9s6 3 6 9z"/><path d="M17 31c0-7 5-12 10-12s8 5 8 12z"/><path d="M11 19c0-5 3-9 7-9s6 4 6 9z" class="brand__hot"/></svg>
+
+      <span class="brand__text"><span class="brand__name">Угли</span><span class="brand__kind">ресторан у огня</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>Разделы</button>
+    <nav class="site-nav" id="site-nav" aria-label="Разделы" data-menu>
+      <a data-nav="menu" href="/portfolio/ugli/menu/">Меню</a>
+      <a data-nav="kitchen" href="/portfolio/ugli/kitchen/">Кухня</a>
+      <a data-nav="events" href="/portfolio/ugli/events/">Банкеты</a>
+      <span class="status" data-open-status>Пн–чт 12–23, пт–сб 12–01, вс 12–22</span>
+      <a class="button button--small" data-nav="booking" aria-current="page" href="/portfolio/ugli/booking/">Забронировать</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container page-head page-head--split">
+    <div>
+      <h1>Бронь стола</h1>
+      <p class="lead">Выберите, сколько вас и когда, а потом стол на схеме. Стол ваш на два часа, опоздание ждём пятнадцать минут.</p>
+    </div>
+    <picture><source type="image/avif" srcset="/portfolio/ugli/img/hall-window-640.avif 640w, /portfolio/ugli/img/hall-window-1024.avif 1024w, /portfolio/ugli/img/hall-window-1600.avif 1600w" sizes="(max-width: 860px) 100vw, 40vw"><source type="image/webp" srcset="/portfolio/ugli/img/hall-window-640.webp 640w, /portfolio/ugli/img/hall-window-1024.webp 1024w, /portfolio/ugli/img/hall-window-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 40vw"><img src="/portfolio/ugli/img/hall-window-1600.webp" width="1600" height="1011" alt="Полутёмный зал со столами у окна" loading="eager" decoding="async" fetchpriority="high" class="photo page-head__photo" style="background-color:rgb(43 44 42)"></picture>
+  </div>
+
+  <div class="container booking" data-booking-root>
+    <form class="booking__form" id="booking-form" data-booking novalidate>
+      <noscript><p class="booking__noscript">Схема работает с включённым JavaScript. Забронировать можно по телефону +7 (000) 000-00-00.</p></noscript>
+
+      <div class="booking__when">
+        <fieldset class="bk-step">
+          <legend class="bk-step__title">Гостей</legend>
+          <div class="stepper">
+            <button class="stepper__button" type="button" data-guests-step="-1" aria-label="Меньше гостей">−</button>
+            <input class="stepper__input num" id="bk-guests" name="guests" type="number" inputmode="numeric" min="1" max="10" value="2" aria-label="Число гостей">
+            <button class="stepper__button" type="button" data-guests-step="1" aria-label="Больше гостей">+</button>
+          </div>
+          <p class="meta">Больше десяти гостей это уже <a href="/portfolio/ugli/events/">банкет</a>.</p>
+        </fieldset>
+        <fieldset class="bk-step">
+          <legend class="bk-step__title">День</legend>
+          <div class="days" data-days></div>
+        </fieldset>
+        <fieldset class="bk-step" aria-describedby="bk-time-error">
+          <legend class="bk-step__title">Время</legend>
+          <div class="times" data-times></div>
+          <p class="field__error" id="bk-time-error" hidden>Выберите время, когда есть свободные столы.</p>
+        </fieldset>
+      </div>
+
+      <fieldset class="bk-step booking__plan" aria-describedby="bk-table-error bk-plan-hint">
+        <legend class="bk-step__title">Стол</legend>
+        <p class="meta" id="bk-plan-hint">Свободные столы обведены. Схему на телефоне можно листать вбок.</p>
+        <div class="plan-scroll">
+          <div class="plan" data-plan>
+            <svg class="plan__svg" viewBox="0 0 1000 640" aria-hidden="true"><rect x="20" y="20" width="960" height="600" rx="6" class="plan__floor"/>
+<g class="plan__windows"><rect x="85" y="14" width="110" height="12"/><rect x="265" y="14" width="110" height="12"/><rect x="445" y="14" width="110" height="12"/><rect x="605" y="14" width="110" height="12"/></g>
+<rect x="28" y="190" width="16" height="130" rx="4" class="plan__sofa"/><rect x="28" y="355" width="16" height="130" rx="4" class="plan__sofa"/>
+<rect x="786" y="20" width="194" height="600" class="plan__kitchen"/>
+<path d="M822 350a68 68 0 0 1 136 0z" class="plan__oven"/>
+<text x="890" y="382" class="plan__label">печь</text>
+<text x="890" y="96" class="plan__label">кухня</text>
+<rect x="748" y="110" width="26" height="350" rx="3" class="plan__counter"/>
+<path d="M560 620h110" class="plan__door"/>
+<text x="615" y="604" class="plan__label">вход</text></svg>
+<label class="table table--rect" data-table="W1" style="left: 14%; top: 14.84%; width: 9%; height: 9.38%">
+<input type="radio" name="table" value="W1" aria-label="Стол 1, у окна, 2 места" disabled>
+<span class="table__num num" aria-hidden="true">1</span><span class="table__seats num" aria-hidden="true">2</span>
+</label>
+<label class="table table--rect" data-table="W2" style="left: 32%; top: 14.84%; width: 9%; height: 9.38%">
+<input type="radio" name="table" value="W2" aria-label="Стол 2, у окна, 2 места" disabled>
+<span class="table__num num" aria-hidden="true">2</span><span class="table__seats num" aria-hidden="true">2</span>
+</label>
+<label class="table table--rect" data-table="W3" style="left: 50%; top: 14.84%; width: 9%; height: 9.38%">
+<input type="radio" name="table" value="W3" aria-label="Стол 3, у окна, 2 места" disabled>
+<span class="table__num num" aria-hidden="true">3</span><span class="table__seats num" aria-hidden="true">2</span>
+</label>
+<label class="table table--rect" data-table="W4" style="left: 66%; top: 14.84%; width: 9%; height: 9.38%">
+<input type="radio" name="table" value="W4" aria-label="Стол 4, у окна, 2 места" disabled>
+<span class="table__num num" aria-hidden="true">4</span><span class="table__seats num" aria-hidden="true">2</span>
+</label>
+<label class="table table--rect" data-table="S1" style="left: 9%; top: 39.84%; width: 9%; height: 18.75%">
+<input type="radio" name="table" value="S1" aria-label="Стол 5, на диване, 4 места" disabled>
+<span class="table__num num" aria-hidden="true">5</span><span class="table__seats num" aria-hidden="true">4</span>
+</label>
+<label class="table table--rect" data-table="S2" style="left: 9%; top: 65.63%; width: 9%; height: 18.75%">
+<input type="radio" name="table" value="S2" aria-label="Стол 13, на диване, 4 места" disabled>
+<span class="table__num num" aria-hidden="true">13</span><span class="table__seats num" aria-hidden="true">4</span>
+</label>
+<label class="table table--rect" data-table="H1" style="left: 26.5%; top: 39.06%; width: 10%; height: 13.44%">
+<input type="radio" name="table" value="H1" aria-label="Стол 6, в зале, 4 места" disabled>
+<span class="table__num num" aria-hidden="true">6</span><span class="table__seats num" aria-hidden="true">4</span>
+</label>
+<label class="table table--rect" data-table="H2" style="left: 43.5%; top: 39.06%; width: 10%; height: 13.44%">
+<input type="radio" name="table" value="H2" aria-label="Стол 7, в зале, 4 места" disabled>
+<span class="table__num num" aria-hidden="true">7</span><span class="table__seats num" aria-hidden="true">4</span>
+</label>
+<label class="table table--rect" data-table="H3" style="left: 60.5%; top: 39.06%; width: 10%; height: 13.44%">
+<input type="radio" name="table" value="H3" aria-label="Стол 8, в зале, 4 места" disabled>
+<span class="table__num num" aria-hidden="true">8</span><span class="table__seats num" aria-hidden="true">4</span>
+</label>
+<label class="table table--round" data-table="R1" style="left: 30%; top: 64.84%; width: 11.6%; height: 18.13%">
+<input type="radio" name="table" value="R1" aria-label="Стол 14, круглый стол, 6 мест" disabled>
+<span class="table__num num" aria-hidden="true">14</span><span class="table__seats num" aria-hidden="true">6</span>
+</label>
+<label class="table table--round" data-table="R2" style="left: 52%; top: 64.84%; width: 11.6%; height: 18.13%">
+<input type="radio" name="table" value="R2" aria-label="Стол 15, круглый стол, 6 мест" disabled>
+<span class="table__num num" aria-hidden="true">15</span><span class="table__seats num" aria-hidden="true">6</span>
+</label>
+<label class="table table--stool" data-table="C1" style="left: 71.2%; top: 25%; width: 5.6%; height: 10.31%">
+<input type="radio" name="table" value="C1" aria-label="Стол 9, за стойкой у печи, 2 места" disabled>
+<span class="table__num num" aria-hidden="true">9</span><span class="table__seats num" aria-hidden="true">2</span>
+</label>
+<label class="table table--stool" data-table="C2" style="left: 71.2%; top: 38.28%; width: 5.6%; height: 10.31%">
+<input type="radio" name="table" value="C2" aria-label="Стол 10, за стойкой у печи, 2 места" disabled>
+<span class="table__num num" aria-hidden="true">10</span><span class="table__seats num" aria-hidden="true">2</span>
+</label>
+<label class="table table--stool" data-table="C3" style="left: 71.2%; top: 51.56%; width: 5.6%; height: 10.31%">
+<input type="radio" name="table" value="C3" aria-label="Стол 11, за стойкой у печи, 2 места" disabled>
+<span class="table__num num" aria-hidden="true">11</span><span class="table__seats num" aria-hidden="true">2</span>
+</label>
+<label class="table table--stool" data-table="C4" style="left: 71.2%; top: 64.84%; width: 5.6%; height: 10.31%">
+<input type="radio" name="table" value="C4" aria-label="Стол 12, за стойкой у печи, 2 места" disabled>
+<span class="table__num num" aria-hidden="true">12</span><span class="table__seats num" aria-hidden="true">2</span>
+</label>
+<label class="table table--rect" data-table="Q1" style="left: 11%; top: 88.28%; width: 11%; height: 10.94%">
+<input type="radio" name="table" value="Q1" aria-label="Стол 16, тихий угол, 4 места" disabled>
+<span class="table__num num" aria-hidden="true">16</span><span class="table__seats num" aria-hidden="true">4</span>
+</label>
+<label class="table table--rect" data-table="L1" style="left: 39%; top: 88.28%; width: 30%; height: 10.94%">
+<input type="radio" name="table" value="L1" aria-label="Стол 17, большой стол, 10 мест" disabled>
+<span class="table__num num" aria-hidden="true">17</span><span class="table__seats num" aria-hidden="true">10</span>
+</label>
+          </div>
+        </div>
+        <ul class="plan-legend" aria-hidden="true">
+          <li class="plan-legend__item plan-legend__item--free">свободен</li>
+          <li class="plan-legend__item plan-legend__item--busy">занят</li>
+          <li class="plan-legend__item plan-legend__item--size">не по размеру</li>
+        </ul>
+        <p class="plan-choice" data-plan-choice aria-live="polite">Стол не выбран</p>
+        <p class="field__error" id="bk-table-error" hidden>Выберите свободный стол на схеме.</p>
+      </fieldset>
+
+      <fieldset class="bk-step booking__contacts">
+        <legend class="bk-step__title">Контакты</legend>
+        <div class="field">
+          <label for="bk-name">Как к вам обращаться</label>
+          <input id="bk-name" name="name" autocomplete="name" maxlength="60" aria-describedby="bk-name-error" required>
+          <p class="field__error" id="bk-name-error" hidden>Напишите имя, хотя бы две буквы.</p>
+        </div>
+        <div class="field">
+          <label for="bk-phone">Телефон</label>
+          <input id="bk-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" aria-describedby="bk-phone-error" required>
+          <p class="field__error" id="bk-phone-error" hidden>Нужен номер из 11 цифр.</p>
+        </div>
+        <div class="field">
+          <label for="bk-occasion">Повод</label>
+          <select id="bk-occasion" name="occasion">
+            <option value="">просто поужинать</option>
+            <option value="birthday">день рождения: принесём свечу в десерте</option>
+            <option value="date">свидание: посадим подальше от шума</option>
+            <option value="business">деловая встреча: счёт на компанию</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="bk-comment">Пожелания <span class="meta">необязательно</span></label>
+          <textarea id="bk-comment" name="comment" rows="3" maxlength="400" placeholder="Например: будет детский стульчик"></textarea>
+        </div>
+      </fieldset>
+
+      <aside class="booking__ticket" aria-labelledby="ticket-title">
+        <p class="ticket__title" id="ticket-title">Ваша бронь</p>
+        <dl class="ticket__list">
+          <div><dt>Гостей</dt><dd class="num" data-sum="guests">2</dd></div>
+          <div><dt>Когда</dt><dd data-sum="when">выберите время</dd></div>
+          <div><dt>Стол</dt><dd data-sum="table">не выбран</dd></div>
+          <div><dt>Ждём до</dt><dd class="num" data-sum="hold">—</dd></div>
+        </dl>
+        <label class="check"><input type="checkbox" name="consent" aria-describedby="bk-consent-error"> <span>Согласен на обработку персональных данных для брони</span></label>
+        <p class="field__error" id="bk-consent-error" hidden>Без согласия забронировать не получится.</p>
+        <button class="button ticket__submit" type="submit" disabled data-booking-submit>Забронировать</button>
+        <p class="meta">Демо-версия: форма проверяет поля и ничего не отправляет.</p>
+      </aside>
+    </form>
+
+    <section class="booking__done" data-booking-done tabindex="-1" aria-labelledby="done-title" hidden>
+      <div class="done__text">
+        <p class="done__stamp hand" aria-hidden="true">ждём!</p>
+        <h2 id="done-title" data-done-title>Стол ваш</h2>
+        <p class="lead" data-done-text></p>
+        <p class="meta">Это концепт-сайт: бронь никуда не ушла, данные остались только на этой странице.</p>
+        <div class="done__actions">
+          <button class="button" type="button" data-done-copy>Скопировать детали</button>
+          <button class="link-arrow" type="button" data-done-again>Изменить бронь</button>
+        </div>
+        <p class="meta" data-done-copied aria-live="polite"></p>
+      </div>
+      <div class="done__plan" data-done-plan aria-hidden="true"><svg class="plan__svg plan__svg--mini" viewBox="0 0 1000 640" role="img" aria-label="Схема зала: столы у окон, диваны, круглые столы, стойка у печи и большой стол"><rect x="20" y="20" width="960" height="600" rx="6" class="plan__floor"/>
+<g class="plan__windows"><rect x="85" y="14" width="110" height="12"/><rect x="265" y="14" width="110" height="12"/><rect x="445" y="14" width="110" height="12"/><rect x="605" y="14" width="110" height="12"/></g>
+<rect x="28" y="190" width="16" height="130" rx="4" class="plan__sofa"/><rect x="28" y="355" width="16" height="130" rx="4" class="plan__sofa"/>
+<rect x="786" y="20" width="194" height="600" class="plan__kitchen"/>
+<path d="M822 350a68 68 0 0 1 136 0z" class="plan__oven"/>
+<text x="890" y="382" class="plan__label">печь</text>
+<text x="890" y="96" class="plan__label">кухня</text>
+<rect x="748" y="110" width="26" height="350" rx="3" class="plan__counter"/>
+<path d="M560 620h110" class="plan__door"/>
+<text x="615" y="604" class="plan__label">вход</text><rect x="101" y="71" width="78" height="48" rx="5" class="plan__table" data-table="W1"/><rect x="281" y="71" width="78" height="48" rx="5" class="plan__table" data-table="W2"/><rect x="461" y="71" width="78" height="48" rx="5" class="plan__table" data-table="W3"/><rect x="621" y="71" width="78" height="48" rx="5" class="plan__table" data-table="W4"/><rect x="51" y="201" width="78" height="108" rx="5" class="plan__table" data-table="S1"/><rect x="51" y="366" width="78" height="108" rx="5" class="plan__table" data-table="S2"/><rect x="221" y="213" width="88" height="74" rx="5" class="plan__table" data-table="H1"/><rect x="391" y="213" width="88" height="74" rx="5" class="plan__table" data-table="H2"/><rect x="561" y="213" width="88" height="74" rx="5" class="plan__table" data-table="H3"/><circle cx="300" cy="415" r="52" class="plan__table" data-table="R1"/><circle cx="520" cy="415" r="52" class="plan__table" data-table="R2"/><rect x="690" y="133" width="44" height="54" rx="5" class="plan__table" data-table="C1"/><rect x="690" y="218" width="44" height="54" rx="5" class="plan__table" data-table="C2"/><rect x="690" y="303" width="44" height="54" rx="5" class="plan__table" data-table="C3"/><rect x="690" y="388" width="44" height="54" rx="5" class="plan__table" data-table="C4"/><rect x="61" y="536" width="98" height="58" rx="5" class="plan__table" data-table="Q1"/><rect x="246" y="536" width="288" height="58" rx="5" class="plan__table" data-table="L1"/></svg></div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <p class="site-footer__name">Угли</p>
+      <p class="site-footer__line">Готовим на огне с 12:00 до последних дров.</p>
+    </div>
+    <dl class="site-footer__hours">
+      <div><dt>Пн–чт</dt><dd class="num">12:00–23:00</dd></div>
+      <div><dt>Пт–сб</dt><dd class="num">12:00–01:00</dd></div>
+      <div><dt>Вс</dt><dd class="num">12:00–22:00</dd></div>
+      <div><dt>Кухня</dt><dd>до часа перед закрытием</dd></div>
+    </dl>
+    <nav class="site-footer__nav" aria-label="Разделы в подвале">
+      <a href="/portfolio/ugli/menu/">Меню</a>
+      <a href="/portfolio/ugli/booking/">Бронь стола</a>
+      <a href="/portfolio/ugli/events/">Банкеты</a>
+      <a href="/portfolio/ugli/kitchen/">Кухня и поставщики</a>
+    </nav>
+    <dl class="site-footer__contacts">
+      <div><dt>Телефон</dt><dd class="num">+7 (000) 000-00-00</dd></div>
+      <div><dt>Почта</dt><dd>hello@ugli.example</dd></div>
+      <div><dt>Адрес</dt><dd>не указан: ресторан вымышлен</dd></div>
+    </dl>
+  </div>
+  <div class="container site-footer__legal">
+    <p>Концепт-проект. Ресторан, блюда, цены и гости вымышлены, совпадения случайны. <a href="/portfolio/ugli/credits/">Фотографии</a> с Unsplash.</p>
+    <p>2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
